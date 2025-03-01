@@ -50,7 +50,7 @@ lazyshop/
 └── README.md
 ```
 
-## 🧠 State Management
+## State Management
 
 The application uses React Context API for state management:
 
