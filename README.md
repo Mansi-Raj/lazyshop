@@ -2,8 +2,6 @@
 
 A modern e-commerce React application for beauty products, personal care items, and fashion.
 
-![LazyShop Screenshot](/api/placeholder/800/400)
-
 ## Overview
 
 LazyShop is a fully responsive e-commerce web application built with React and styled with Tailwind CSS. It features a clean, modern UI with smooth animations, product filtering by category, shopping cart functionality, and more.
