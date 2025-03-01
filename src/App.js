@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ProductProvider } from './contexts/ProductContext';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ProductSection from './components/ProductSection';
+import Features from './components/Features';
+import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ProductProvider>
+      <div className="min-h-screen flex flex-col bg-gray-50">
+        <Navbar />
+        <Hero />
+        <main className="flex-grow">
+          <ProductSection />
+          <Features />
+          <Newsletter />
+        </main>
+        <Footer />
+      </div>
+    </ProductProvider>
   );
 }
 
